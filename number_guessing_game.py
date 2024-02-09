@@ -11,7 +11,7 @@ def start_game():
         if guess == computer_number:
             print("You won!")
             wins += 1
-            print(f"It took you {high+low} guesses to solve it!")
+            print(f"It took you {high+low+wins} guesses to solve it!")
         elif guess > computer_number:
             print("Try a lower number!")
             low += 1
